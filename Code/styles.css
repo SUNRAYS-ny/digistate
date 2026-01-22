@@ -99,3 +99,40 @@
 .search input::placeholder {
   color: #8e8e93;
 }
+
+/* ========================= */
+/* 📱 Mobile adjustments */
+/* ========================= */
+@media (max-width: 768px) {
+  .logo {
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 30%;
+    width: 70%;
+  }
+
+  .search {
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 18%;
+    width: 80%;
+  }
+
+  /* Reduce visual clutter on mobile */
+  .vector-square {
+    opacity: 0.6;
+  }
+}
+
+/* ========================= */
+/* 📱 Small phones */
+/* ========================= */
+@media (max-width: 480px) {
+  .vector-square {
+    display: none;
+  }
+
+  .grid-overlay {
+    background-size: 32px 32px;
+  }
+}
