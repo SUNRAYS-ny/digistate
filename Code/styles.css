@@ -1,0 +1,101 @@
+.desktop {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display",
+    Helvetica, Arial, sans-serif;
+}
+
+/* Background */
+.background {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Grid overlay */
+.grid-overlay {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(to right, rgba(255, 255, 255, 0.25) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.25) 1px, transparent 1px);
+  background-size: 64px 64px;
+}
+
+/* Vector squares */
+.vector-square {
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  background: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(2px);
+}
+
+.square-1 {
+  top: 321px;
+  left: 1024px;
+}
+
+.square-2 {
+  top: 448px;
+  left: 1024px;
+}
+
+.square-3 {
+  top: 513px;
+  left: 832px;
+}
+
+.square-4 {
+  top: 513px;
+  left: 960px;
+}
+
+/* Logo */
+.logo {
+  position: absolute;
+  left: 94px;
+  top: 658px;
+  width: 404px;
+  height: auto;
+}
+
+/* Search */
+.search {
+  position: absolute;
+  left: 94px;
+  top: 752px;
+  width: 354px;
+  height: 48px;
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0 16px;
+
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+  border-radius: 2px;
+}
+
+.search-icon {
+  font-size: 18px;
+  opacity: 0.6;
+}
+
+.search input {
+  border: none;
+  outline: none;
+  flex: 1;
+  font-size: 16px;
+  background: transparent;
+}
+
+.search input::placeholder {
+  color: #8e8e93;
+}
